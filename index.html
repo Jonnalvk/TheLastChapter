@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'The Last Chapter' Escape</title>
+    <link rel="stylesheet" href="css/escaperoomstyle.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <main>
+
+        <h1>'The last chapter' Escaperoom</h1>
+
+        <div id="gamewrapper">
+            <div id="gamecontainer">
+                <!-- STARTSCHERM -->
+                
+                <div id="startschermbg" class="gameframe">
+                    <div id="deurlink"><img id="deurimg" src="images/opendeur.png"></div>
+                    <div id="starttekstcontainer">
+                        <p id="starttekst">Enter the bookstore to start the game</p>
+                    </div>
+                </div>
+        
+                <!-- KAMER START BACKGROUND + START MESSAGE -->
+        
+                <div id="kamer1bg" class="gameframe">
+                    <div id="boekzone"></div>
+                    <div id="kistzone"></div>
+                    <div id="schilderijzone"></div>
+                    <div id="intropopup">
+                        <h2>Welcome to 'The last chaper' Escaperoom</h2>
+                        <p>You're trapped in an old bookshop full of of secrets... Solve the puzzles and escape in 10 minutes!</p>
+                        <button id="startbutton">Start the Escape Room</button>
+                    </div>
+                </div>
+        
+                <div id="closeupschilderij" class="gameframe">
+                    <div id="code">
+                        <p id="codenumber1">0</p>
+                        <p id="codenumber2">0</p>
+                        <p id="codenumber3">0</p>
+                    </div>
+                </div>
+                <div id="openschilderij" class="gameframe"></div>
+            </div>
+
+            <button id="pausebutton">
+                <img src="images/pauzebutton.png" alt="Pause">
+            </button>
+
+            <button id="terugbutton">
+                <img src="images/terugbutton.png" alt="Terug">
+            </button>
+    
+            <div id="timerpauzecontainer" class="gameframe">
+                <p id="timer">10:00</p>
+                <div id="pausepopup">
+                    <h2>Pauze Menu</h2>
+                    <button id="resumebutton" class="pauzemenubutton">Resume</button>
+                    <button id="exitbutton" class="pauzemenubutton">Exit</button>
+                </div>
+            </div>
+        </div>
+        <div id="cursorbalk">
+            <img src="images/handcursor.png">
+            <img src="images/sleutel.png">
+        </div>
+    </main>
+    <audio id="deursound" src="sounds/deuropengeluid.mp3"></audio>
+    <script src="js/escaperoom.js" defer></script>   
+</body>
+</html>
