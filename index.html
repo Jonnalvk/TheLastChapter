@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'The Last Chapter' Escape</title>
+    <link rel="stylesheet" href="css/escaperoomstyle.css">
+</head>
+<body>
+    <main>
+
+        <h1>The Last Chapter Escaperoom</h1>
+
+        <div id="gamewrapper">
+            <div id="gamecontainer">
+                <!-- STARTSCHERM -->
+                
+                <div id="startschermbg" class="gameframe">
+                    <div id="deurlink"></div>
+                    <div id="starttekstcontainer">
+                        <p id="starttekst">Enter the bookstore to start the game</p>
+                    </div>
+                </div>
+        
+                <!-- KAMER START BACKGROUND + START MESSAGE -->
+        
+                <div id="kamer1bg" class="gameframe">
+                    <div id="boek1zone" class="zones"></div>
+                    <div id="boek2zone" class="zones"></div>
+                    <div id="boek3zone" class="zones"></div>
+                    <div id="kistzone" class="zones"></div>
+                    <div id="schilderijzone" class="zones"></div>
+                    <div id="slotzone" class="zones"></div>
+                    <div id="intropopup">
+                        <h2>Welcome to the Last Chapter Escaperoom</h2>
+                        <p>You're trapped in an old bookshop full of secrets... Solve the puzzles and escape in 10 minutes!</p>
+                        <button id="startbutton">Start the Escape Room</button>
+                    </div>
+                </div>
+
+                <!-- CLOSE UP SCHILDERIJ + OPEN SCHILDERIJ -->
+        
+                <div id="closeupschilderij" class="gameframe">
+                    <div id="code">
+                        <p id="codenumber1">0</p>
+                        <p id="codenumber2">0</p>
+                        <p id="codenumber3">0</p>
+                    </div>
+                </div>
+                <div id="openschilderij" class="gameframe">
+                    <div id="sleutelzone"></div>
+                    <div id="geensleutel"></div>
+                </div>
+
+                <!-- CLOSE UP KIST + OPEN BOX -->
+
+                <div id="closeupkist" class="gameframe">
+                    <div id="knoppencontainer">
+                        <div id="knop1" class="knoppen"></div>
+                        <div id="knop2" class="knoppen"></div>
+                        <div id="knop3" class="knoppen"></div>
+                    </div>
+                </div>
+                <div id="openbox" class="gameframe">
+                    <div id="sleutel2zone"></div>
+                    <div id="geensleutel2"></div>
+                </div>
+
+                <!-- BOEKEN EN RAADSEL -->
+
+                <div id="boek1" class="gameframe"></div>
+                <div id="boek2" class="gameframe"></div>
+                <div id="boek3" class="gameframe">
+                    <div id="raadselzone"></div>
+                </div>
+                <div id="raadsel" class="gameframe"></div>
+                
+                <!-- ESCAPED -->
+
+                <div id="escapedscherm" class="gameframe">
+                    <section id="eindmessage">
+                        <h2>You've escaped the Last Chapter bookstore!</h2>
+                        <p id="eindtijdtekst"></p>
+                        <button id="opnieuwbutton">Start over</button>
+                    </section>
+                </div>
+
+            </div>
+
+            <!-- EXTRA'S -->
+            <button id="pausebutton">
+                <img src="images/pauzebutton.png" alt="Pause">
+            </button>
+            <p id="timer">10:00</p>
+
+            <button id="terugbutton">
+                <img src="images/terugbutton.png" alt="Terug">
+            </button>
+        
+            <div id="pausepopup">
+                <h2>Pauze Menu</h2>
+                <button id="resumebutton" class="pauzemenubutton">Resume</button>
+                <button id="exitbutton" class="pauzemenubutton">Exit</button>
+            </div>
+        
+            <div id="feedbackcontainer">
+                <p id="feedbacktext"></p>
+            </div>
+        </div>
+
+        <div id="cursorbalk">
+            <img id="cursorhand" src="images/handcursor.png" alt="handcursor">
+            <img id="cursorsleutel" src="images/sleutel.png" alt="sleutelcursor">
+            <img id="cursorsleutel2" src="images/sleutel2.png" alt="sleutelcursor">
+        </div>
+    </main>
+
+    <audio id="deursound" src="sounds/deuropengeluid.mp3"></audio>
+    <audio id="achtergrondmuziek" src="sounds/achtergrondmuziek.mp3" loop></audio> 
+    <audio id="slotopen" src="sounds/slotopen.mp3"></audio>
+    <audio id="slotdicht" src="sounds/slotdicht.mp3"></audio>
+    <audio id="buttonklik" src="sounds/buttonklik.mp3"></audio>
+    <audio id="sleutelpakken" src="sounds/sleutelPakken.mp3"></audio>
+    <audio id="boeksound" src="sounds/boek.mp3"></audio>
+    <!-- bron: https://www.w3schools.com/tags/att_audio_autoplay.asp + https://www.w3schools.com/tags/att_audio_loop.asp -->
+    <script src="js/escaperoom.js" defer></script>   
+</body>
+</html>
